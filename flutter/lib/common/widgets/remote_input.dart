@@ -363,10 +363,14 @@ class _RawTouchGestureDetectorRegionState
         instance
           ..onOneFingerPanUpdate = onOneFingerPanUpdate
           ..onOneFingerPanEnd = onOneFingerPanEnd
-          ..onTwoFingerScaleStart = onTwoFingerScaleStart
-          ..onTwoFingerScaleUpdate = onTwoFingerScaleUpdate
-          ..onTwoFingerScaleEnd = onTwoFingerScaleEnd
-          ..onThreeFingerVerticalDragUpdate = onThreeFingerVerticalDragUpdate;
+          // ..onTwoFingerScaleStart = onTwoFingerScaleStart
+          // ..onTwoFingerScaleUpdate = onTwoFingerScaleUpdate
+          // ..onTwoFingerScaleEnd = onTwoFingerScaleEnd
+          // ..onThreeFingerVerticalDragUpdate = onThreeFingerVerticalDragUpdate;
+          // ..onTwoFingerScaleStart = onTwoFingerScaleStart
+          ..onTwoFingerScaleUpdate = onThreeFingerVerticalDragUpdate;
+          // ..onTwoFingerScaleEnd = onTwoFingerScaleEnd
+          // ..onThreeFingerVerticalDragUpdate = onThreeFingerVerticalDragUpdate;
       }),
     };
   }
